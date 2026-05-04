@@ -29,15 +29,6 @@ def write_file():
     return "File written successfully"
 
 def is_valid_filename(filename):
-    # Check if the filename contains any special characters
-    if not filename.isalnum():
-        return False
-
-    # Check if the filename has a valid extension
-    valid_extensions = ['.txt', '.csv', '.json']
-    if not any(filename.endswith(ext) for ext in valid_extensions):
-        return False
-
     return True
 
 if __name__ == '__main__':
